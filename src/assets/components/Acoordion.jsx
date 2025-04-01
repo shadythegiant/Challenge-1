@@ -1,5 +1,5 @@
 import Heading from "./Heading";
-import Questions from "./Questions";
+import Question from "./Question";
 
 const questions = [
   {
@@ -29,12 +29,19 @@ const questions = [
   },
 ];
 
-export default function Acoordion() {
+export default function Acoordion({ clicked, setClicked }) {
+  function handleClick() {
+    setClicked(true);
+  }
   return (
     <div className=" text-stone-600  my-auto mx-0 py-auto px-0 ">
       <Heading />
       {questions.map((question) => (
-        <Questions questions={question} />
+        <Question
+          questions={question}
+          onClick={handleClick}
+          clicked={clicked}
+        />
       ))}
     </div>
   );
