@@ -35,12 +35,20 @@ function App() {
                 </div>
 
                 {/* content  */}
-                {selected === i && (
+                {/* {selected === i && (
                   <div className="title bg-stone-200/50 py-4 px-3 text-center text-sm  capitalize tracking-widest text-gray-900 transition-all duration-300 ease-in">
                     {" "}
                     {item.answer}
                   </div>
-                )}
+                )} */}
+                <div
+                  className={`title bg-stone-200/50 py-4 px-3 text-center text-sm  capitalize tracking-widest text-gray-900 transition-all duration-400 ease-in ${
+                    selected === i ? "" : "hidden"
+                  }`}
+                >
+                  {" "}
+                  {item.answer}
+                </div>
               </div>
             ))}
           </div>
