@@ -9,3 +9,58 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.app {
+  width: 60rem;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 3rem 3rem;
+}
+
+.heading-primary {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-block: 0.4rem;
+}
+
+.heading-secondary {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-block: 0.5rem;
+  letter-spacing: 1.2px;
+}
+
+/* question wrapper */
+.question-wrapper {
+  margin-block: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+/* q for question */
+
+.q {
+  padding: 0.8rem 0.5rem;
+  background-color: var(--color-lime-950);
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  line-height: 2;
+  overflow-wrap: unset;
+}
+
+.collapse-sign {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 2rem;
+}
+
+/* a for answer  */
+
+.a {
+  padding: 0.6rem 0.5rem;
+  margin-top: 0.4rem;
+  border: 2px solid var(--color-lime-950);
+  border-radius: 10px;
+}
